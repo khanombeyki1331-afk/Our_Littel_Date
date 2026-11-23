@@ -78,3 +78,8 @@ function startCountdown() {
 
     }, 1000);
 }
+
+function showNoMessage() {
+    document.getElementById("noMessage").innerHTML =
+    "کونی نمی‌خوای بیای دخترت رو ببینی توله‌سگ؟ از خداتم باشه که بیای پیشم 😭💔🐶";
+}
