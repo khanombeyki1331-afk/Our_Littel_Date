@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Estedad:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #200817, #650D35, #BD376F);
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-container {
+    text-align: center;
+    padding: 40px 25px;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #FFB6D5;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 35px rgba(255, 105, 180, 0.3);
+}
+
+h1 {
+    color: #FFD6E7;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 48px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px #FF69B4;
+}
+
+p {
+    color: #FFD6E7;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Main Animation */
+
+.main-container {
+    animation: appear 2s ease;
+}
+
+/* Benjamin Glow */
+
+h2 {
+    animation: glow 2s infinite alternate;
+}
+
+/* Page Appearance */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Name Glow Effect */
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #FF69B4;
+    }
+
+    to {
+        text-shadow: 0 0 30px #FF1493,
+                     0 0 50px #FF69B4;
+    }
+}
+
+
+.hearts span {
+    position: fixed;
+    bottom: -50px;
+    color: #FF69B4;
+    font-size: 25px;
+    animation: floating 8s linear infinite;
+    opacity: 0;
+}
+
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(3) {
+    left: 35%;
+    animation-delay: 4s;
+}
+
+.hearts span:nth-child(4) {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(5) {
+    left: 65%;
+    animation-delay: 3s;
+}
+
+.hearts span:nth-child(6) {
+    left: 75%;
+    animation-delay: 5s;
+}
+
+.hearts span:nth-child(7) {
+    left: 85%;
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(8) {
+    left: 95%;
+    animation-delay: 4s;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.main-container {
+    position: relative;
+    z-index: 1;
+}
+
+.enter-btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: 1px solid #FFB6D5;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #FF69B4, #D63384);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px #FF69B4;
+    transition: 0.4s;
+}
+
+.enter-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #FF1493;
+}
+
+/* Persian Font */
+
+.invite-container {
+    direction: rtl;
+    font-family: 'Estedad', sans-serif;
+    text-align: center;
+}
+
+.invite-container h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFD6E7;
+}
+
+.invite-container h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFB6D5;
+}
+
+.invite-container p {
+    font-size: 17px;
+    line-height: 2.2;
+    font-weight: 400;
+}
+
+.invite-container {
+    display: none;
+}
+
+.date-next-btn {
+    background: linear-gradient(135deg, #ff8acb, #ff4f9a);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #ff69b4;
+    transition: 0.3s;
+}
+
+.date-next-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ff1493;
+}
+
+.memory-page {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.3);
+    color: white;
+}
+
+.memory-page h1 {
+    color: #ffb6d9;
+    margin-bottom: 25px;
+}
+
+.memory-page h2 {
+    color: #ffd6e7;
+    margin: 20px 0;
+}
+
+.memory-page p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.park-image {
+    margin: 15px auto;
+    width: 100%;
+    max-width: 320px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.park-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #ffb6d9;
+    box-shadow: 0 0 25px rgba(255, 182, 217, 0.5);
+}
+
+.countdown-page {
+    position: relative;
+    z-index: 2;
+    width: 85%;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 35px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.3);
+    color: white;
+}
+
+.countdown-page h1 {
+    color: #ffb6d9;
+    font-size: 32px;
+}
+
+.countdown-page h2 {
+    color: #ffd6e7;
+    margin: 25px 0;
+}
+
+.countdown-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.countdown-box div {
+    background: rgba(255, 182, 217, 0.2);
+    border: 1px solid #ffb6d9;
+    border-radius: 15px;
+    padding: 15px 10px;
+    min-width: 85px;
+}
+
+.countdown-box span {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.countdown-box p {
+    color: #ffd6e7;
+    margin: 8px 0 0;
+}
+
+.countdown-btn {
+    margin-top: 25px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff69a6, #ffb6d9);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.countdown-box div {
+    background: linear-gradient(
+        145deg,
+        rgba(255, 105, 166, 0.35),
+        rgba(255, 182, 217, 0.15)
+    );
+
+    border: 1px solid rgba(255, 182, 217, 0.7);
+
+    box-shadow: 0 0 20px rgba(255, 105, 166, 0.25);
+
+    transition: 0.3s;
+}
+
+.countdown-box div:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 105, 166, 0.6);
+}
+
+.countdown-box span {
+    text-shadow: 0 0 15px #ff69a6;
+    animation: numberGlow 2s infinite alternate;
+}
+
+@keyframes numberGlow {
+    from {
+        text-shadow: 0 0 5px #ffb6d9;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff69a6;
+    }
+}

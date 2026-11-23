@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little Date ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="backgroundMusic" loop >
+    <source src="romantic.mp3" type="audio/mpeg">
+</audio>
+    <div class="hearts">
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+    </div> 
+    <div class="main-container">
+
+        <h1>Welcome To Our World</h1>
+
+        <h2>𝓑𝓮𝓷𝓳𝓪𝓶𝓲𝓷</h2>
+
+        <p>A Little World Made Just For You ♡</p>
+        <button class="enter-btn" onclick="goToDate()">
+    Enter My Heart ♡
+</button>
+
+    </div>
+     </div>
+
+    <!-- Date Invitation Page -->
+
+    <div class="invite-container" id="invitePage">
+
+        <h1>سلام بنیامین جان! ♡</h1>
+
+        <h2>با من میای قرار؟</h2>
+
+        <p>
+            یه سورپرایز کوچولو برات دارم...
+            <br>
+            بیا با هم یه خاطره قشنگ بسازیم! ♡
+        </p>
+
+        <div class="invite-buttons">
+
+            <button class="yes-btn" onclick="acceptDate()">
+    آره، حتماً! ♥
+</button>
+
+            <button class="no-btn">شاید بعداً ♡</button>
+          
+        </div>
+        <div id="successMessage" style="display:none;">
+
+    <h1>وای وای! 😍</h1>
+
+    <h2>می‌دونستم قبول می‌کنی آقای بنیامین! 😂❤️</h2>
+
+    <p>
+        حالا دیگه قول دادی!
+        <br>
+        باید خودتو برای یه قرار فوق‌العاده آماده کنی!
+        <br>
+        یه خاطره قشنگ در انتظارمونه ♡
+    </p>
+     <button class="date-next-btn" onclick="showDateDetails()">
+    بریم سراغ قرارمون! ♡
+</button>
+        </div>
+</div> 
+<!-- Date Details Page -->
+
+<div class="date-details" id="dateDetails" style="display: none;">
+
+    <h1>قرار قشنگ ما ♡</h1>
+
+    <h2>۱۰ /آذر/ ۱۴۰۵</h2>
+
+    <p>یه روز خاص برای ساختن یه خاطره خاص! ❤️</p>
+
+    <div id="countdown">
+        منتظر شمارش معکوس باش...
+    </div>
+
+    <div class="date-image">
+        <img src="images/couple.jpg" alt="A lovely couple">
+    </div>
+
+</div>
+    </div>
+    <div class="memory-page" id="memoryPage" style="display: none;">
+
+    <h1>یه قرار آشنا، با کلی حس قشنگ ♡</h1>
+
+    <h2>حدس بزن قراره کجا بریم؟ 🌷</h2>
+
+    <p>
+        قراره دوباره برگردیم به همون پارکی
+        که یه عالمه خاطره قشنگ توش ساختیم...
+        <br>
+        همون جایی که لحظه‌هامون برامون خاص شد.
+        <br>
+        این بار هم می‌خوایم خاطره‌های تازه‌ای بسازیم.
+    </p>
+    <div class="park-image">
+    <img src="images/park.jpg" alt="Our Memory Park">
+</div> 
+    <h2>مقصد ما: همون پارک خاطره‌انگیزمون ♡</h2>
+
+    <p>۱۰ آذر، منتظر یه روز قشنگ باش! ❤️</p>
+    <button class="countdown-btn" onclick="showCountdown()">
+    بریم سراغ شمارش معکوس! ♡
+</button>
+</div> 
+<div class="countdown-page" id="countdownPage" style="display: none;">
+
+    <h1>Our Special Day ♡</h1>
+
+    <h2>تا قرار قشنگمون...</h2>
+
+    <div class="countdown-box">
+
+        <div>
+            <span id="days">00</span>
+            <p>روز</p>
+        </div>
+
+        <div>
+            <span id="hours">00</span>
+            <p>ساعت</p>
+        </div>
+
+        <div>
+            <span id="minutes">00</span>
+            <p>دقیقه</p>
+        </div>
+
+        <div>
+            <span id="seconds">00</span>
+            <p>ثانیه</p>
+        </div>
+
+    </div>
+
+    <h2>۱۰ آذر ۱۴۰۵ 🌷</h2>
+
+    <p>یه خاطره قشنگ دیگه در انتظارمونه ♡</p>
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
